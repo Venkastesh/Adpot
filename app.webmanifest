@@ -3,7 +3,7 @@
   "short_name": "Adpot",
   "start_url": "/",
   "orientaion": "landscape",
-  "theme_color": "#ffcec1",
+  "theme_color": "#a62967",
   "scope": "/",
   "display": "standalone",
   "background_color": "#a62967",
