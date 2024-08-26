@@ -1,10 +1,10 @@
 {
   "name": "Adopt",
   "short_name": "Adpot",
-  "start_url": "./",
+  "start_url": "/",
   "orientaion": "landscape",
   "theme_color": "#ffcec1",
-  "scope": "./",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffcec1",
   "icons": [
