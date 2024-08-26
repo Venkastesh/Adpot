@@ -7,6 +7,7 @@ import Chats from "./pages/Chats.jsx";
 import Music from "./pages/Music.jsx";
 import Communities from "./pages/Community.jsx";
 import Calls from "./pages/Calls.jsx";
+import ChatScreen from "./pages/ChatScreen.jsx";
 
 const router = createBrowserRouter([
   {

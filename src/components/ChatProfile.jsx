@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { NavigationContext } from "../NavigationContext";
 
 const ChatProfile = ({ name, unReadCount, time, photo, lastMessage }) => {
-  //   const history = useHistory();
-
+    const { modalshown, setModalShown, stackScreensShown, setStackScreensShown } =
+    useContext(NavigationContext);
+  const navigate = useNavigate();
   const handlePress = () => {
-    // history.push({
-    //   pathname: "/chatScreen",
-    //   state: { id: 1, name, photo },
-    // });
+    setStackScreensShown(true)
   };
 
   return (

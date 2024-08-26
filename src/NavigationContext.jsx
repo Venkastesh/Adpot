@@ -3,9 +3,10 @@ import { createContext, useContext, useState } from "react";
 export const NavigationContext = createContext();
 
 const NavigationContextProvider = ({ children }) => {
-    const [currentRoute,setCurrentRoute] = useState("chats")
+    const [modalshown,setModalShown] = useState(false)
+    const [stackScreensShown,setStackScreensShown] = useState(false)
     return (
-        <NavigationContext.Provider value={{currentRoute,setCurrentRoute}}>
+        <NavigationContext.Provider value={{modalshown,setModalShown,stackScreensShown,setStackScreensShown}}>
             {children}
         </NavigationContext.Provider>
     )
