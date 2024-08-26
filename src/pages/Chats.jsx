@@ -1,7 +1,10 @@
+import ChatProfile from "../components/ChatProfile";
+import { chatProfiles } from "../utils/Constants";
+
 const Chats = () => {
-    return (
-        <div>Hello chats</div>
-    );
-}
- 
+  return [...chatProfiles,...chatProfiles,...chatProfiles,...chatProfiles]?.map((item) => (
+    <ChatProfile name={item.name} lastMessage={item.lastMessage} photo={item.photo} unReadCount={item.unReadCount} time={item.time} />
+  ));
+};
+
 export default Chats;

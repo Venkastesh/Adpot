@@ -8,9 +8,7 @@ const TabBarIcon = ({ name, children, index, active,route }) => {
   return (
     <div
       onClick={() => navigate(route)}
-      className={`items-center flex flex-col justify-center ${
-        index == 1 && "pl-5"
-      } ${index == 4 && "pr-5"} `}
+      className={`items-center flex flex-1 flex-col justify-center  `}
     >
       {children}
       <div

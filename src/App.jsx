@@ -14,9 +14,11 @@ function App() {
 
   return (
     <NavigationContextProvider>
-      <div className="h-[100vh] bg-[#fcfcfc] flex flex-col items-center justify-between w-full font-roboto">
+      <div className="h-[100svh] overflow-hidden bg-[#fcfcfc] flex flex-col items-center justify-between w-full font-roboto">
         <Header />
-        <Outlet />
+        <div className="flex-1 w-full overflow-y-auto">
+          <Outlet />
+        </div>
         <BottomBar />
       </div>
     </NavigationContextProvider>
