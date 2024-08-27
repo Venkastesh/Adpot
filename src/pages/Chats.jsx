@@ -1,10 +1,31 @@
+import { useContext, useEffect, useState } from "react";
 import ChatProfile from "../components/ChatProfile";
-import { chatProfiles } from "../utils/Constants";
-
+import { getUsers } from "../services/getUsers";
+import CHatProfileShimmer from "../shimmers/ChatProfileShimmer";
+import { UsersContext } from "../utils/UsersContext";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Chats = () => {
-  return [...chatProfiles,...chatProfiles,...chatProfiles,...chatProfiles]?.map((item) => (
-    <ChatProfile name={item.name} lastMessage={item.lastMessage} photo={item.photo} unReadCount={item.unReadCount} time={item.time} />
-  ));
+  const { chatProfiles } = useContext(UsersContext);
+  console.log(chatProfiles);
+  return (
+    <div className="chat-list">
+      {[...chatProfiles]?.map((item) =>
+        item ? (
+          <ChatProfile
+            className={"chat-profile"}
+            name={item.name}
+            lastMessage={item.location}
+            photo={item.picture.medium}
+            unReadCount={item.unReadCount}
+            time={item.registered.date}
+          />
+        ) : (
+          <CHatProfileShimmer />
+        )
+      )}
+    </div>
+  );
 };
 
 export default Chats;
