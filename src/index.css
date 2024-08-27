@@ -27,4 +27,8 @@ body {
 img {
   pointer-events: none;
 }
+body ::-webkit-navigation-bar {
+  background-color: #ff0000;
+}
+
 
