@@ -3,10 +3,10 @@
   "short_name": "Naad",
   "start_url": "/",
   "orientaion": "landscape",
-  "theme_color": "#fcfcfc",
+  "theme_color": "#ff0000",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#fcfcfc",
+  "background_color": "#ff0000",
   "icons": [
     {
       "src": "/maskable-icon.png",
