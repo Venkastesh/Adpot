@@ -30,6 +30,10 @@ const router = createBrowserRouter([
         path: "calls",
         element: <Calls />,
       },
+      {
+        path: "chatscreen",
+        element: <ChatScreen />,
+      },
     ],
   },
 ]);

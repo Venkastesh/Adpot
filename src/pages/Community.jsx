@@ -1,6 +1,6 @@
 const Communities = () => {
     return (
-        <div>Hello Communities</div>
+        <div></div>
     );
 }
  

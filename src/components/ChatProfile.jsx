@@ -3,11 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { NavigationContext } from "../NavigationContext";
 
 const ChatProfile = ({ name, unReadCount, time, photo, lastMessage,className }) => {
-  const { modalshown, setModalShown, stackScreensShown, setStackScreensShown } =
-    useContext(NavigationContext);
   const navigate = useNavigate();
   const handlePress = () => {
-    setStackScreensShown(true);
+    navigate(`/chatscreen?n=${name.first}`)
   };
 
   return (
