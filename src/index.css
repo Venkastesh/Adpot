@@ -9,7 +9,7 @@ body {
   overscroll-behavior-y: contain;
   padding: env(safe-area-inset-left) env(safe-area-inset-right)
     env(safe-area-inset-bottom) !important;
-  background-color: #ff0000;
+  background-color: #fcfcfc;
 }
 
 * {
